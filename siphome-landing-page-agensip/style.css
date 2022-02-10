@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+#h1 {
+    color: #262B36;
+}
+/* header */
+header {
+    background: url('https://i.ibb.co/8xp79hV/background-1.png') center/cover;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    overflow: hidden;
+}
+.nav-link {
+    font-size: 0.9375em;
+}
+
+/* first-container */
+#contaier-1 {
+    font-size: 16px;
+}
+#contaier-1 h1 {
+    font-size: 3em;
+}
+#contaier-1 p {
+    font-size: 1.1em;
+}
+#contaier-1 #img-home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* second container */
+/* #container-2 {
+    margin-top: 100px;
+} */
+#header-text{
+    letter-spacing: 10px;
+    color: #2053D1;
+    font-weight: bold;
+}
+#container-2 .row p {
+    color: #606B86;
+}
+#container-2 .row #items-hover #hover-purple {
+    transition: .3s ease-in-out;
+    border-radius: 1em;
+}
+
+/* container 3 */
+section {
+    width: 100%;
+    height: auto;
+    background: url('https://i.ibb.co/DgkgQQP/background-4.png') center/cover;
+}
+svg {
+    fill: white;
+    transition: .3s ease-in-out;
+}
+#container-3 .row #item-hover-2:hover svg{
+    fill: #D69026;
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* container 4 */
+#container-4 img{
+    width: 100%;
+    max-width: 500px;
+}
+/* animation keyframes */
+#massage-1 {
+    animation: sms1 1s infinite alternate;
+}
+@keyframes sms1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+#massage-2 {
+    animation: sms2 2s infinite alternate;
+}
+@keyframes sms2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(30px);
+    }
+}
+#massage-3 {
+    animation: sms3 3s infinite alternate;
+}
+@keyframes sms3 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+#Shapeicon {
+    animation: Shapeicon 1.4s infinite alternate;
+}
+@keyframes Shapeicon {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+@media (min-width: 992px) {
+    .nav-link {
+        margin: 0 10px;
+    }
+    #container-2 .row #items-hover #hover-purple:hover {
+        transform: translateX(-10px) translateY(-10px);
+        box-shadow: 6px 6px 0px 0 black;
+        background-color: #6b95ff;
+    }
+    #container-2 .row #items-hover #hover-purple:hover p {
+        color: white;
+    }
+}
+@media (max-width: 992px) {
+    header {
+        background: url('https://i.ibb.co/SwKFRpf/background-2.png') center/cover;
+    }
+    #btn {
+        flex-direction: column;
+    }
+    #btn-1 {
+        color: white;
+    }
+    #contaier-1 .row #img-home {
+        display: none;
+    }
+    /* #container-2 {
+        margin-top: 200px;
+    } */
+    section {
+        background: url('https://i.ibb.co/wzqGrsH/background-5.png') center/cover;
+    }
+}
+@media (max-width: 576px) {
+    .container-fluid h1 {
+        font-size: 2.6em;
+    }
+    section {
+        background: url('https://i.ibb.co/PjH6Wtc/background-6.png') center/cover;
+    }
+    #contaier-1 .row h1 {
+        font-size: 30px;
+    }
+    #contaier-1 .row p {
+        font-size: 15px;
+    }
+
+}
